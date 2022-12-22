@@ -8,19 +8,23 @@ export default function Slider({slides}) {
     // const[active, setActive] = useState(false);
     const timeoutRef = React.useRef(null);
 
-    const show = (event, index) => {
+    const show = (e, index) => {
         let a = document.querySelectorAll(".carouselDots>li");
         a.forEach((elem) => {
             elem.classList.remove('activeDots');
         })
         setCurrentIndex(index);
-        event.target.classList.add('activeDots');
+        e.target.classList.add('activeDots');
     }
     const dotList = [];
     const innerPart = [];
 
     for (let i = 0; i < slides.length; i++) {
-        dotList.push(<li onClick={(e) => show(e, i)}></li>);        
+        if(i === 0) {
+            dotList.push(<li className="activeDots" onClick={(e) => show(e, i)}></li>); 
+        } else {
+            dotList.push(<li onClick={(e) => show(e, i)}></li>); 
+        }      
         if(currentIndex === i) {
             innerPart.push(
                 <div className="carouselItem">
