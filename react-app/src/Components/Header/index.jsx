@@ -31,7 +31,7 @@ export default function Header() {
     return (
         <div className="Header">
             <div className="row subHeader1">
-                <div className="col1">
+                <div className="col col1">
                     <nav>
                         <ul className="nav1">
                             <li>About</li>
@@ -41,36 +41,36 @@ export default function Header() {
                         </ul>
                     </nav>
                 </div>
-                <div className="col1 rightCol">
+                <div className="col col1 rightCol">
                     {dropdownElement.map((elem, index) => {
                         return <FirstSubHeader key={index} title={elem.title} content={elem.content}/>
                     })}
                 </div>
             </div>
             <div className="row subHeader2">
-                <div className="col2">
+                <div className="col col2">
                     <img src={MultiShop} alt="mainLogo" className="mainLogo" ></img>
                 </div>
-                <div className="col2">
+                <div className="col col2">
                     <div className="search">
                         <input type="text" placeholder="Search for products" />
                         <button><FiSearch /></button>
                     </div>
                 </div>
-                <div className="col2 rightCol info">
+                <div className="col col2 rightCol info">
                     <p>Customer Service</p>
                     <h5>+012 345 6789</h5>
                 </div>
             </div>
             <div className="row subHeader3">
-                <div className="col2 small">
+                <div className="col col2 small">
                     <div className="yellow">
                         <FaBars />
                         <h3>Categories</h3>
                         <FaAngleDown className="rightIcon" />
                     </div>
                 </div>
-                <div className="col2">
+                <div className="col col2">
                     <nav>
                         <ul className="nav2">
                             <li>Home</li>
@@ -81,7 +81,7 @@ export default function Header() {
                         </ul>
                     </nav>
                 </div>
-                <div className="col2 rightCol">
+                <div className="col col2 rightCol">
                     <div className="personalBox">
                         <FaHeart className="personalIcon"/>
                         <span>0</span>

@@ -1,0 +1,29 @@
+.main {
+    margin-top: 10px;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    float: left;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.col3 {
+    width: 60%;
+}
+
+.col4 {
+    width: 40%;
+}
+
+.col5 {
+    width: 100%;
+}
