@@ -47,7 +47,7 @@ export default function Slider({slides}) {
         return () => {
             resetTimeout();
           };
-    }, [])
+    }, [currentIndex])
 
     
     return (
