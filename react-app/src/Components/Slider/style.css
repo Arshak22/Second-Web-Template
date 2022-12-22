@@ -1,9 +1,13 @@
+.carousel {
+    position: relative;
+}
+
 .carouselItem {
     height: 430px;
     /* opacity: 0;
     transition-property: opacity; */
     transform: none;
-    display: none;
+    /* display: none; */
     float: left;
     width: 100%;
     margin-right: -100%;
@@ -37,9 +41,9 @@
     cursor: pointer;
 }
 
-.carouselDots .active {
-    width: 30px;
-    background: #fff;
+.activeDots {
+    width: 30px !important;
+    background: #fff !important;
 }
 
 .carouselInner {
@@ -80,18 +84,21 @@
 }
 
 .carouselCaption p {
-    padding-right: 3rem;
-    padding-left: 3rem;
+    padding-right: 8rem;
+    padding-left: 8rem;
+    margin-bottom: 3rem;
 }
 
 .carouselCaption button {
     cursor: pointer;
+    font-size: 15px;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     color: white;
     border: 1px solid white;
+    background-color: transparent;
 }
 
 .carouselCaption button:hover {

@@ -11,7 +11,6 @@
 
 .subHeader1 {
     padding-bottom: 0.25rem;
-    background-color: #f5f5f5;
 }
 
 .col {
@@ -45,6 +44,10 @@
     display: inline-flex;
     align-items: center;
     justify-content: flex-end;
+}
+
+.subHeader2 {
+    background-color: white;
 }
 
 .col2 {
@@ -183,4 +186,23 @@
     color: #ffc800;
     cursor: pointer;
     margin-right: 5px;
+}
+
+.drowdownCategories {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    width: 330px;
+    z-index: 999;
+    position: absolute;
+    align-items: flex-start;
+    background-color: #fff;
+}
+
+.dropdown {
+    position: absolute;
+    left: 320px;
+    background-color: white;
 }

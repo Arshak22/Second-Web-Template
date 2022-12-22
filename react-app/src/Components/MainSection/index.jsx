@@ -8,6 +8,10 @@ import Offer2 from "../../assets/images/offer-2.jpg";
 import Carousel1 from "../../assets/images/carousel-1.jpg";
 import Carousel2 from "../../assets/images/carousel-2.jpg";
 import Carousel3 from "../../assets/images/carousel-3.jpg";
+import {FaCheck} from "react-icons/fa";
+import {FaShippingFast} from "react-icons/fa";
+import {FaExchangeAlt} from "react-icons/fa";
+import {FaPhoneVolume} from "react-icons/fa";
 
 export default function MainSection() {
 
@@ -45,6 +49,24 @@ export default function MainSection() {
                     <div className="col col5">
                     <HoverPicture img={Offer2}  subheading="Save 20%" heading="Special Offer" btnName="Shop Now" />
                     </div>
+                </div>
+            </div>
+            <div className="row center">
+                <div className="col col6">
+                    <FaCheck className="serviceIcon"/>
+                    <h5>Quality Product</h5>
+                </div>
+                <div className="col col6">
+                    <FaShippingFast className="serviceIcon"/>
+                    <h5>Quality Product</h5>
+                </div>
+                <div className="col col6">
+                    <FaExchangeAlt className="serviceIcon"/>
+                    <h5>Quality Product</h5>
+                </div>
+                <div className="col col6">
+                    <FaPhoneVolume className="serviceIcon"/>
+                    <h5>Quality Product</h5>
                 </div>
             </div>
         </div>

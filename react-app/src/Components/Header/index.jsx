@@ -11,6 +11,9 @@ import { FaShoppingCart } from "react-icons/fa";
 
 export default function Header() {
 
+    const[active1, setActive1] = useState(false);
+    const[active2, setActive2] = useState(false);
+
     const [dropdownElement, setDropdownElement] = useState([
         {
             title: "My Account",
@@ -26,7 +29,14 @@ export default function Header() {
         }
     ]);
 
+
+    const handleActive = () => {
+        setActive1(!active1);
+    }
     
+    const handleActive1 = () => {
+        setActive2(!active2);
+    }
 
     return (
         <div className="Header">
@@ -64,11 +74,28 @@ export default function Header() {
             </div>
             <div className="row subHeader3">
                 <div className="col col2 small">
-                    <div className="yellow">
+                    <div className="yellow" onClick={handleActive}>
                         <FaBars />
                         <h3>Categories</h3>
                         <FaAngleDown className="rightIcon" />
                     </div>
+                    {active1 ? <div className="drowdownCategories">
+                        <button className="dropdownItem" onMouseOver={handleActive1}>Dresses</button>
+                        {active2 ? <div className="dropdown">
+                            <button className="dropdownItem">Men's Dresses</button>
+                            <button className="dropdownItem">Women's Dresses</button>
+                            <button className="dropdownItem">Baby's Dresses</button>
+                        </div>: null}
+                        <button className="dropdownItem">Shirts</button>
+                        <button className="dropdownItem">Jeans</button>
+                        <button className="dropdownItem">Swimwear</button>
+                        <button className="dropdownItem">Sleapwear</button>
+                        <button className="dropdownItem">Sportswear</button>
+                        <button className="dropdownItem">Jumpsuits</button>
+                        <button className="dropdownItem">Blazers</button>
+                        <button className="dropdownItem">Jackets</button>
+                        <button className="dropdownItem">Shoes</button>
+                    </div>: null}
                 </div>
                 <div className="col col2">
                     <nav>
