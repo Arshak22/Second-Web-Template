@@ -2,7 +2,6 @@ import React from "react";
 import './style.css';
 import HoverPicture from "../HoverPicture";
 import Slider from "../Slider";
-import { useState } from "react";
 import Offer1 from "../../assets/images/offer-1.jpg";
 import Offer2 from "../../assets/images/offer-2.jpg";
 import Carousel1 from "../../assets/images/carousel-1.jpg";

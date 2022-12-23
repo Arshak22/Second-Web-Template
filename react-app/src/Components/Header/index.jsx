@@ -86,12 +86,12 @@ export default function Header() {
                         <FaAngleDown className="rightIcon" />
                     </div>
                     {active1 ? <div className="drowdownCategories">
-                        <button className="dropdownItem" onMouseOver={handleActive1}>Dresses <FaAngleRight className="rightIcon2"/></button>
-                        {active2 ? <div className="dropdown">
+                        <button className="dropdownItem subMenu">Dresses <FaAngleRight className="rightIcon2"/></button>
+                        <div className="dropdown subMenu">
                             <button className="dropdownItem">Men's Dresses</button>
                             <button className="dropdownItem">Women's Dresses</button>
                             <button className="dropdownItem">Baby's Dresses</button>
-                        </div>: null}
+                        </div>
                         <button className="dropdownItem">Shirts</button>
                         <button className="dropdownItem">Jeans</button>
                         <button className="dropdownItem">Swimwear</button>

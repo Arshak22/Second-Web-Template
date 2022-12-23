@@ -208,6 +208,7 @@
 }
 
 .dropdown {
+    display: none;
     position: absolute;
     left: 320px;
     background-color: white;
@@ -220,4 +221,12 @@
     background-color: #ffc800;
     color: #3d464d;
     z-index: 999;
+}
+
+.subMenu:hover {
+    display: block;
+}
+
+.subMenu:hover+.dropdown {
+    display: block;
 }

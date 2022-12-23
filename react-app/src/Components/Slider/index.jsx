@@ -1,12 +1,9 @@
 import React from "react";
 import './style.css';
 import { useState } from "react";
-import { useEffect } from "react";
 
 export default function Slider({slides}) {
     const[currentIndex, setCurrentIndex] = useState(0);
-    // const[active, setActive] = useState(false);
-    const timeoutRef = React.useRef(null);
 
     const show = (e, index) => {
         let a = document.querySelectorAll(".carouselDots>li");
@@ -40,26 +37,6 @@ export default function Slider({slides}) {
             );
         }
     }
-
-    // function resetTimeout() {
-    //     if (timeoutRef.current) {
-    //       clearTimeout(timeoutRef.current);
-    //     }
-    //   }
-
-    // useEffect(() => {
-    //     resetTimeout();
-    //     timeoutRef.current = setTimeout(
-    //         () => setCurrentIndex((currentIndex) => currentIndex === slides.length ? 0: currentIndex + 1),
-    //     2000);
-
-        
-
-    //     return () => {
-    //         resetTimeout();
-    //       };
-    // }, [currentIndex])
-
     
     return (
         <div className="carousel">
