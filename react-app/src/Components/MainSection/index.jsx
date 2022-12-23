@@ -69,6 +69,10 @@ export default function MainSection() {
                     <h5>Quality Product</h5>
                 </div>
             </div>
+            <div className="categories">
+                <h2>Categories</h2>
+                <hr />
+            </div>
         </div>
     );
 }
