@@ -145,11 +145,17 @@
 
 .yellow h3 {
     padding-left: 10px;
+    display: flex;
 }
 
 .rightIcon {
     position: relative;
     left: 140px;
+}
+
+.rightIcon2 {
+    position: relative;
+    left: 215px;
 }
 
 .nav2 {
@@ -205,4 +211,13 @@
     position: absolute;
     left: 320px;
     background-color: white;
+}
+
+.dropdown2 {
+    position: absolute;
+    left: 698px;
+    top: 227px;
+    background-color: #ffc800;
+    color: #3d464d;
+    z-index: 999;
 }

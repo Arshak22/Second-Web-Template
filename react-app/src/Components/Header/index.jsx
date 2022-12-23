@@ -8,11 +8,13 @@ import { FaBars } from "react-icons/fa";
 import { FaAngleDown } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
+import {FaAngleRight} from "react-icons/fa";
 
 export default function Header() {
 
     const[active1, setActive1] = useState(false);
     const[active2, setActive2] = useState(false);
+    const[active3, setActive3] = useState(false);
 
     const [dropdownElement, setDropdownElement] = useState([
         {
@@ -36,6 +38,10 @@ export default function Header() {
     
     const handleActive1 = () => {
         setActive2(!active2);
+    }
+
+    const handleActive2 = () => {
+        setActive3(!active3);
     }
 
     return (
@@ -80,7 +86,7 @@ export default function Header() {
                         <FaAngleDown className="rightIcon" />
                     </div>
                     {active1 ? <div className="drowdownCategories">
-                        <button className="dropdownItem" onMouseOver={handleActive1}>Dresses</button>
+                        <button className="dropdownItem" onMouseOver={handleActive1}>Dresses <FaAngleRight className="rightIcon2"/></button>
                         {active2 ? <div className="dropdown">
                             <button className="dropdownItem">Men's Dresses</button>
                             <button className="dropdownItem">Women's Dresses</button>
@@ -103,7 +109,11 @@ export default function Header() {
                             <li>Home</li>
                             <li>Shop</li>
                             <li>Shope Detail</li>
-                            <li>Pages <FaAngleDown /> </li>
+                            <li onClick={handleActive2}>Pages <FaAngleDown /> </li>
+                            {active3 ? <div className="dropdown2">
+                                <button className="dropdownItem">Shopping Cart</button>
+                                <button className="dropdownItem">Checkout</button>
+                            </div>: null}
                             <li>Contact</li>
                         </ul>
                     </nav>
