@@ -1,0 +1,141 @@
+.myArticle2 {
+    max-width: 370px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+    padding-right: 30px;
+    padding-left: 40px;  
+}
+
+.myFigure2 {
+    background: #fff;
+}
+
+.myFigure2:hover .articlePic2 {
+    transform: scale(1.3);
+    transition: all .7s ease;
+}
+
+.myFigure2:hover .figureIcons {
+    opacity: 1;
+    background: rgba(255,255,255,.7);
+    transition: .2s 0s;
+}
+
+.myFigure2:hover .i1 {
+    visibility: visible;
+    opacity: 1;
+    transition: .3s 0s;
+}
+
+.myFigure2:hover .i2 {
+    visibility: visible;
+    opacity: 1;
+    transition: .3s .1s;
+}
+
+.myFigure2:hover .i3 {
+    visibility: visible;
+    opacity: 1;
+    transition: .3s .2s;
+}
+
+.myFigure2:hover .i4 {
+    visibility: visible;
+    opacity: 1;
+    transition: .3s .3s;
+}
+
+.articlePic2 {
+    max-width: 100%;
+    height: auto;
+}
+
+.figureIcons {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+
+.productIcon {
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 3px;
+    width: 40px;
+    height: 40px;
+    color: #3d464d;
+    border: 2px solid #3d464d;
+    background-color: transparent;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.productIcon:hover {
+    visibility: visible;
+    opacity: 1;
+    color: #ffd333;
+    background-color: #3d464d;
+    border-color: #3d464d;
+}
+
+.myFigureCaption2 {
+    text-align: center;
+}
+
+.figureTitle2 {
+    font-size: 1rem;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #3d464d;
+    margin-bottom: 0.5rem;
+    padding-top: 1rem;
+    cursor: pointer;
+}
+
+.figureTitle2:hover {
+    color: #e6b400;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price h5 {
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: #3d464d;
+    line-height: 1.2;
+    margin-right: 5px;
+}
+
+.price h6 {
+    color: #6c757d;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.2;
+    text-decoration: line-through;
+}
+
+.ratingAndNumber {
+    padding-bottom: 25px;
+    padding-top: 5px;
+}
+
+.star {
+    color: #ffd333;
+    margin-right: 2px;
+}

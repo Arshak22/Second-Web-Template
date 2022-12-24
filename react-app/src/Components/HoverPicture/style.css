@@ -53,6 +53,7 @@
 }
 
 .offerText button {
+    font-size: 1rem;
     color: #3d464d;
     cursor: pointer;
     background-color: #ffd333;

@@ -2,8 +2,6 @@ import React from "react";
 import "./style.css";
 
 export const Categories = (props) => {
-
-
     return (
         <article className='myArticle'>
             <figure className="myFigure">

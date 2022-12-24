@@ -29,6 +29,7 @@
 .figurePic {
     background-color: white;
     overflow: hidden;
+    position: relative;
 }
 
 .myFigureCaption {

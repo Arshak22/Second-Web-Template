@@ -3,7 +3,7 @@ import './style.css';
 import { useState } from "react";
 import FirstSubHeader from "../FirstSubHeader/indes";
 import MultiShop from "../../assets/images/MultiShop.jpg";
-import {FiSearch} from "react-icons/fi";
+import { FaSearch } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
 import { FaAngleDown } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
@@ -65,7 +65,7 @@ export default function Header() {
                 <div className="col col2">
                     <div className="search">
                         <input type="text" placeholder="Search for products" />
-                        <button><FiSearch /></button>
+                        <button><FaSearch /></button>
                     </div>
                 </div>
                 <div className="col col2 rightCol info">
