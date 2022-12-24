@@ -35,10 +35,6 @@ export default function Header() {
     const handleActive = () => {
         setActive1(!active1);
     }
-    
-    const handleActive1 = () => {
-        setActive2(!active2);
-    }
 
     const handleActive2 = () => {
         setActive3(!active3);

@@ -1,0 +1,57 @@
+.myArticle {
+    max-width: 320px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin-top: 25px;
+    padding-right: 15px;
+    padding-left: 15px;    
+}
+
+.myFigure {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    cursor: pointer;
+}
+
+.myFigure:hover .articlePic {
+    transform: scale(1.2) rotate(5deg);
+    transition: all .5s ease;
+}
+
+.myArticle:hover .myFigure {
+    background: #ffd333;
+    transition: all .5s ease;
+}
+
+.figurePic {
+    background-color: white;
+    overflow: hidden;
+}
+
+.myFigureCaption {
+    width: 180px;
+    padding-left: 20px;
+}
+
+.articlePic {
+    max-width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+
+.figureTitle {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #3d464d;
+    margin-bottom: 0.5rem;
+}
+
+.figureDesc {
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    color: #626364;
+    line-height: 1.8;
+}

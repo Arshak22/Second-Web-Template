@@ -2,11 +2,16 @@ import React from "react";
 import './style.css';
 import HoverPicture from "../HoverPicture";
 import Slider from "../Slider";
+import { Categories } from "../Categories";
 import Offer1 from "../../assets/images/offer-1.jpg";
 import Offer2 from "../../assets/images/offer-2.jpg";
 import Carousel1 from "../../assets/images/carousel-1.jpg";
 import Carousel2 from "../../assets/images/carousel-2.jpg";
 import Carousel3 from "../../assets/images/carousel-3.jpg";
+import Category1 from "../../assets/images/category-1.jpg";
+import Category2 from "../../assets/images/category-2.jpg";
+import Category3 from "../../assets/images/category-3.jpg";
+import Category4 from "../../assets/images/category-4.jpg";
 import {FaCheck} from "react-icons/fa";
 import {FaShippingFast} from "react-icons/fa";
 import {FaExchangeAlt} from "react-icons/fa";
@@ -33,6 +38,70 @@ export default function MainSection() {
             text: "Lorem rebum magna amet lorem magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum diam",
             btnText: "Shop Now"
         }
+    ]
+
+
+    const categories = [
+        {
+            img: Category1,
+            name: "Category Name",
+            description: "1000 Products"
+        },
+        {
+            img: Category2,
+            name: "Category Name",
+            description: "1000 Products"
+        },
+        {
+            img: Category3,
+            name: "Category Name",
+            description: "1000 Products"
+        },
+        {
+            img: Category4,
+            name: "Category Name",
+            description: "1000 Products"
+        },
+        {
+            img: Category4,
+            name: "Category Name",
+            description: "1000 Products"
+        },
+        {
+            img: Category3,
+            name: "Category Name",
+            description: "1000 Products"
+        },
+        {
+            img: Category2,
+            name: "Category Name",
+            description: "1000 Products"
+        },
+        {
+            img: Category1,
+            name: "Category Name",
+            description: "1000 Products"
+        },
+        {
+            img: Category2,
+            name: "Category Name",
+            description: "1000 Products"
+        },
+        {
+            img: Category1,
+            name: "Category Name",
+            description: "1000 Products"
+        },
+        {
+            img: Category4,
+            name: "Category Name",
+            description: "1000 Products"
+        },
+        {
+            img: Category3,
+            name: "Category Name",
+            description: "1000 Products"
+        },
     ]
 
     return (
@@ -70,8 +139,13 @@ export default function MainSection() {
             </div>
             <div className="categories">
                 <h2>Categories</h2>
-                <hr />
+                <div className="line"></div>
             </div>
+            <div className="categoriesGallery">
+                    {categories.map((elem, index) => {
+                        return <Categories key={index} img={elem.img} title={elem.name} text={elem.description} />
+                    })}
+                </div>
         </div>
     );
 }

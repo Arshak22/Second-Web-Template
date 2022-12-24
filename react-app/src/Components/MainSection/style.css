@@ -65,8 +65,9 @@
 
 .categories {
     margin: 100px auto;
+    margin-bottom: 0px;
     width: 1260px;
-    /* display: flex; */
+    display: flex;
 }
 
 .categories h2 {
@@ -76,6 +77,18 @@
     color: #3d464d;
 }
 
-.categories hr {
-    border-top: 1px dashed black;
+.line {
+    display: flex;
+    flex-grow: 1;
+    height: 1px;
+    align-self: center;
+    margin: 0 20px;
+    border-bottom: 1px dashed grey;
+}
+
+.categoriesGallery {
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    flex-wrap: wrap;
 }
