@@ -16,6 +16,7 @@ import {FaCheck} from "react-icons/fa";
 import {FaShippingFast} from "react-icons/fa";
 import {FaExchangeAlt} from "react-icons/fa";
 import {FaPhoneVolume} from "react-icons/fa";
+import { SectionTitle } from "../SectionTitle";
 
 export default function MainSection() {
 
@@ -137,15 +138,22 @@ export default function MainSection() {
                     <h5>Quality Product</h5>
                 </div>
             </div>
-            <div className="categories">
-                <h2>Categories</h2>
-                <div className="line"></div>
-            </div>
+            <SectionTitle title="Categories"/>
             <div className="categoriesGallery">
                     {categories.map((elem, index) => {
                         return <Categories key={index} img={elem.img} title={elem.name} text={elem.description} />
                     })}
+            </div>
+            <SectionTitle title="Featured Products"/>
+            <div className="row row2">
+                <div className="col col1">
+                    <HoverPicture img={Offer1}  subheading="Save 20%" heading="Special Offer" btnName="Shop Now" big="big"/>
                 </div>
+                <div className="col col1">
+                    <HoverPicture img={Offer2}  subheading="Save 20%" heading="Special Offer" btnName="Shop Now" big="big"/>
+                </div>
+            </div>
+            <SectionTitle title="Recent Products"/>
         </div>
     );
 }

@@ -13,10 +13,9 @@ import {FaAngleRight} from "react-icons/fa";
 export default function Header() {
 
     const[active1, setActive1] = useState(false);
-    const[active2, setActive2] = useState(false);
     const[active3, setActive3] = useState(false);
 
-    const [dropdownElement, setDropdownElement] = useState([
+    const [dropdownElement] = useState([
         {
             title: "My Account",
             content: ["Sign in", "Sign up"]

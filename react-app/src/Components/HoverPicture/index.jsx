@@ -4,7 +4,7 @@ import './style.css';
 export default function HoverPicture(props) {
 
     return (
-        <div className="productOffer">
+        <div className={`productOffer ${props.big}`}>
             {props.img ? <img className="mainPic" src={props.img} alt="mainPic" />: null}
             <div className="offerText">
                 <h6>{props.subheading}</h6>
