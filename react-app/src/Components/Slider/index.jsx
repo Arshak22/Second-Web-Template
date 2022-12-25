@@ -18,13 +18,13 @@ export default function Slider({slides}) {
 
     for (let i = 0; i < slides.length; i++) {
         if(i === 0) {
-            dotList.push(<li className="activeDots" onClick={(e) => show(e, i)}></li>); 
+            dotList.push(<li key={i} className="activeDots" onClick={(e) => show(e, i)}></li>); 
         } else {
-            dotList.push(<li onClick={(e) => show(e, i)}></li>); 
+            dotList.push(<li key={i} onClick={(e) => show(e, i)}></li>); 
         }      
         if(currentIndex === i) {
             innerPart.push(
-                <div className="carouselItem">
+                <div key={i} className="carouselItem">
                     {slides[i].img ? <img src={slides[i].img} alt="slideImage" className="slideImage" />: null}
                     <div className="carouselCaption">
                         <div>

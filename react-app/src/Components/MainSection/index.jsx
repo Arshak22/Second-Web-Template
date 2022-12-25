@@ -5,6 +5,7 @@ import Slider from "../Slider";
 import { Categories } from "../Categories";
 import { SectionTitle } from "../SectionTitle";
 import { Products } from "../Products";
+import { VendorCarousel } from "../VendorCarousel";
 
 import Offer1 from "../../assets/images/offer-1.jpg";
 import Offer2 from "../../assets/images/offer-2.jpg";
@@ -26,6 +27,15 @@ import Product5 from "../../assets/images/product-5.jpg";
 import Product6 from "../../assets/images/product-6.jpg";
 import Product7 from "../../assets/images/product-7.jpg";
 import Product8 from "../../assets/images/product-8.jpg";
+
+import Vendor1 from "../../assets/images/vendor-1.jpg";
+import Vendor2 from "../../assets/images/vendor-2.jpg";
+import Vendor3 from "../../assets/images/vendor-3.jpg";
+import Vendor4 from "../../assets/images/vendor-4.jpg";
+import Vendor5 from "../../assets/images/vendor-5.jpg";
+import Vendor6 from "../../assets/images/vendor-6.jpg";
+import Vendor7 from "../../assets/images/vendor-7.jpg";
+import Vendor8 from "../../assets/images/vendor-8.jpg";
 
 import {FaCheck} from "react-icons/fa";
 import {FaShippingFast} from "react-icons/fa";
@@ -186,6 +196,8 @@ export default function MainSection() {
         }
     ]
 
+    const vendors = [Vendor1, Vendor2, Vendor3, Vendor4, Vendor5, Vendor6, Vendor7, Vendor8];
+
     return (
         <div className="main">
             <div className="row">
@@ -244,6 +256,9 @@ export default function MainSection() {
                 {products.map((elem, index) => {
                     return <Products key={index} img={elem.img} name={elem.name} newPrice={elem.newPrice} oldPrice={elem.oldPrice} starRating={elem.starRating} number={elem.number}  />
                 })}
+            </div>
+            <div className="center2">
+                <VendorCarousel vendors={vendors}/>
             </div>
         </div>
     );

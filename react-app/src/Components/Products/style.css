@@ -131,6 +131,8 @@
 }
 
 .ratingAndNumber {
+    display: flex;
+    justify-content: center;
     padding-bottom: 25px;
     padding-top: 5px;
 }

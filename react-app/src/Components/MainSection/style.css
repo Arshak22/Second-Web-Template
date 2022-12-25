@@ -49,6 +49,17 @@
     margin-right: 15px;
 }
 
+.center2 {
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    /* margin-left: 60px; */
+    /* right: -55px; */
+    /* left: 60px; */
+    /* margin-right: -55px; */
+}
+
 .col6 h5 {
     font-size: 1.25rem;
     font-weight: 600;

@@ -1,0 +1,26 @@
+.slick-slide>div {
+    margin: 0 10px;
+    background-color: white;
+}
+
+.slick-list {
+    margin: 0 50px;
+}
+
+.Slider:hover {
+    cursor: grab;
+}
+
+.Slider:active {
+    cursor: grabbing;
+}
+
+.sliderImage {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 35px;
+}
+
+.slick-prev, .slick-next {
+    display: none !important;
+}

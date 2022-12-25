@@ -13,7 +13,6 @@ import {FaAngleRight} from "react-icons/fa";
 export default function Header() {
 
     const[active1, setActive1] = useState(false);
-    const[active3, setActive3] = useState(false);
 
     const [dropdownElement] = useState([
         {
@@ -33,10 +32,6 @@ export default function Header() {
 
     const handleActive = () => {
         setActive1(!active1);
-    }
-
-    const handleActive2 = () => {
-        setActive3(!active3);
     }
 
     return (
