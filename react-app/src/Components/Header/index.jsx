@@ -104,11 +104,11 @@ export default function Header() {
                             <li>Home</li>
                             <li>Shop</li>
                             <li>Shope Detail</li>
-                            <li onClick={handleActive2}>Pages <FaAngleDown /> </li>
-                            {active3 ? <div className="dropdown2">
+                            <li className="Pages">Pages <FaAngleDown /> </li>
+                            <div className="dropdown2 Pages">
                                 <button className="dropdownItem">Shopping Cart</button>
                                 <button className="dropdownItem">Checkout</button>
-                            </div>: null}
+                            </div>
                             <li>Contact</li>
                         </ul>
                     </nav>

@@ -217,11 +217,27 @@
     background-color: white;
 }
 
+.Pages {
+    height: 55px;
+}
+
+.Pages .dropdownItem {
+    background-color: #ffc800;
+}
+
+.Pages:hover {
+    display: block;
+}
+
+.Pages:hover+.dropdown2 {
+    display: block;
+}
+
 .dropdown2 {
+    display: none;
     position: absolute;
     left: 698px;
-    top: 227px;
-    background-color: #ffc800;
+    top: 232px;
     color: #3d464d;
     z-index: 999;
 }

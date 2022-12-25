@@ -59,12 +59,12 @@
     list-style: none;
 }
 
-.col ul li {
+.col8 ul li {
     margin-bottom: 0.5rem;
     cursor: pointer;
 }
 
-.col ul li:hover {
+.col8 ul li:hover {
     color: #cfcfcf;
     text-decoration: underline;
 }
