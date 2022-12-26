@@ -13,13 +13,13 @@ export const Products = (props) => {
     const stars = [];
 
     if(props.starRating == 0) {
-        stars.push(<>
+        stars.push(<div key={0}>
             <small className="star"><FiStar /></small>
             <small className="star"><FiStar /></small>
             <small className="star"><FiStar /></small>
             <small className="star"><FiStar /></small>
             <small className="star"><FiStar /></small>
-        </>);
+        </div>);
     }
 
     for(let i = 1; i <= props.starRating; i++) {
