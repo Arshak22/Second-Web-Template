@@ -229,14 +229,13 @@
     display: block;
 }
 
-.Pages:hover+.dropdown2 {
+.Pages:hover .dropdown2 {
     display: block;
 }
 
 .dropdown2 {
     display: none;
     position: absolute;
-    left: 698px;
     top: 232px;
     color: #3d464d;
     z-index: 999;

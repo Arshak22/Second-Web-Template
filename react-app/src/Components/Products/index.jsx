@@ -12,108 +12,19 @@ export const Products = (props) => {
 
     const stars = [];
 
-    switch(props.starRating) {
-        case 0: 
-            stars.push(<div key="0">
-                <small className="star"><FiStar /></small>
-                <small className="star"><FiStar /></small>
-                <small className="star"><FiStar /></small>
-                <small className="star"><FiStar /></small>
-                <small className="star"><FiStar /></small>
-            </div>);
-            break;
-        case 0.5:
-            stars.push(<div key="0.5">
-                <small className="star"><FaStarHalfAlt /></small>
-                <small className="star"><FiStar /></small>
-                <small className="star"><FiStar /></small>
-                <small className="star"><FiStar /></small>
-                <small className="star"><FiStar /></small>
-            </div>);
-            break;
-        case 1:
-            stars.push(<div key="1">
-                <small className="star"><FaStar /></small>
-                <small className="star"><FiStar /></small>
-                <small className="star"><FiStar /></small>
-                <small className="star"><FiStar /></small>
-                <small className="star"><FiStar /></small>
-            </div>);
-            break;
-        case 1.5:
-            stars.push(<div key="1.5">
-                <small className="star"><FaStar /></small>
-                <small className="star"><FaStarHalfAlt /></small>
-                <small className="star"><FiStar /></small>
-                <small className="star"><FiStar /></small>
-                <small className="star"><FiStar /></small>
-            </div>);
-            break;
-        case 2:
-            stars.push(<div key="2">
-                <small className="star"><FaStar /></small>
-                <small className="star"><FaStar /></small>
-                <small className="star"><FiStar /></small>
-                <small className="star"><FiStar /></small>
-                <small className="star"><FiStar /></small>
-            </div>);
-            break;
-        case 2.5:
-            stars.push(<div key="2.5">
-                <small className="star"><FaStar /></small>
-                <small className="star"><FaStar /></small>
-                <small className="star"><FaStarHalfAlt /></small>
-                <small className="star"><FiStar /></small>
-                <small className="star"><FiStar /></small>
-            </div>);
-            break;
-        case 3:
-            stars.push(<div key="3">
-                <small className="star"><FaStar /></small>
-                <small className="star"><FaStar /></small>
-                <small className="star"><FaStar /></small>
-                <small className="star"><FiStar /></small>
-                <small className="star"><FiStar /></small>
-            </div>);
-            break;
-        case 3.5:
-            stars.push(<div key="3.5">
-                <small className="star"><FaStar /></small>
-                <small className="star"><FaStar /></small>
-                <small className="star"><FaStar /></small>
-                <small className="star"><FaStarHalfAlt /></small>
-                <small className="star"><FiStar /></small>
-            </div>);
-            break;
-        case 4: 
-        stars.push(<div key="4">
-            <small className="star"><FaStar /></small>
-            <small className="star"><FaStar /></small>
-            <small className="star"><FaStar /></small>
-            <small className="star"><FaStar /></small>
-            <small className="star"><FiStar /></small>
-        </div>);
-        break;
-        case 4.5:
-            stars.push(<div key="4.5">
-                <small className="star"><FaStar /></small>
-                <small className="star"><FaStar /></small>
-                <small className="star"><FaStar /></small>
-                <small className="star"><FaStar /></small>
-                <small className="star"><FaStarHalfAlt /></small>
-            </div>);
-            break;
-        case 5:
-        default:
-            stars.push(<div key="5">
-                <small className="star"><FaStar /></small>
-                <small className="star"><FaStar /></small>
-                <small className="star"><FaStar /></small>
-                <small className="star"><FaStar /></small>
-                <small className="star"><FaStar /></small>
-            </div>);
+    for(let i = 1; i <= props.starRating; i++) {
+        stars.push(<small className="star"><FaStar /></small>);
+        if(i === Math.floor(props.starRating)) {
+            let j = i;
+            if(props.starRating - i !== 0) {
+                stars.push(<small className="star"><FaStarHalfAlt /></small>);
+                j++;
+            }
+            for(j; j < 5; j++) {
+                stars.push(<small className="star"><FiStar /></small>);
+            }
+        }
     }
-    
 
     return (
         <article className='myArticle2'>

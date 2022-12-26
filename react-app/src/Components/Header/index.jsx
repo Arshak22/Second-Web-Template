@@ -99,11 +99,12 @@ export default function Header() {
                             <li>Home</li>
                             <li>Shop</li>
                             <li>Shope Detail</li>
-                            <li className="Pages">Pages <FaAngleDown /> </li>
-                            <div className="dropdown2 Pages">
-                                <button className="dropdownItem">Shopping Cart</button>
-                                <button className="dropdownItem">Checkout</button>
-                            </div>
+                            <li className="Pages">Pages <FaAngleDown /> 
+                                <div className="dropdown2">
+                                    <button className="dropdownItem">Shopping Cart</button>
+                                    <button className="dropdownItem">Checkout</button>
+                                </div>
+                            </li>
                             <li>Contact</li>
                         </ul>
                     </nav>

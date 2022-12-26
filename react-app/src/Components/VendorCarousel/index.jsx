@@ -7,6 +7,7 @@ import "./style.css";
 export const VendorCarousel = ({vendors}) => {
     const settings = {
         dots: false,
+        draggable: true,
         infinite: true,
         slidesToShow: 6,
         slidesToScroll: 1,
@@ -15,6 +16,7 @@ export const VendorCarousel = ({vendors}) => {
         speed: 5000,
         autoplaySpeed: 2000,
         cssEase: "linear",
+        pauseOnHover: true,
         responsive: [
           {
             breakpoint: 1024,
@@ -25,6 +27,7 @@ export const VendorCarousel = ({vendors}) => {
               dots: false,
               autoplay: true,
               speed: 2000,
+              pauseOnHover: true,
               autoplaySpeed: 2000,
               cssEase: "linear"
             }

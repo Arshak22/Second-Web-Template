@@ -45,8 +45,8 @@
 .center {
     margin-top: 50px;
     margin-bottom: 50px;
-    margin-left: 30px;
-    margin-right: 15px;
+    /* margin-left: 30px;
+    margin-right: 15px; */
 }
 
 .center2 {
@@ -74,13 +74,13 @@
 }
 
 .Gallery {
-    margin-left: 20px;
+    /* margin-left: 20px; */
     display: flex;
     flex-wrap: wrap;
 }
 
 .row2 {
     margin-top: 100px;
-    margin-left: 10px;
-    margin-right: 45px;
+    /* margin-left: 10px; */
+    /* margin-right: 45px; */
 }
