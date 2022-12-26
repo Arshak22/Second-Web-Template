@@ -12,6 +12,16 @@ export const Products = (props) => {
 
     const stars = [];
 
+    if(props.starRating == 0) {
+        stars.push(<>
+            <small className="star"><FiStar /></small>
+            <small className="star"><FiStar /></small>
+            <small className="star"><FiStar /></small>
+            <small className="star"><FiStar /></small>
+            <small className="star"><FiStar /></small>
+        </>);
+    }
+
     for(let i = 1; i <= props.starRating; i++) {
         stars.push(<small className="star"><FaStar /></small>);
         if(i === Math.floor(props.starRating)) {
