@@ -3,13 +3,15 @@ import Header from "./Components/Header";
 import Home from "./Pages/Home";
 import { Footer } from "./Components/Footer";
 import { Hook } from "./Components/hook";
+import LoginPage from "./Components/LoginPage";
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <LoginPage/>
+      {/* <Header />
       <Home />
-      <Footer />
+      <Footer /> */}
       {/* <Hook /> */}
     </div>
   );
