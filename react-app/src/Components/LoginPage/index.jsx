@@ -32,7 +32,7 @@ export default function LoginPage() {
             email: email.value,
             phone: phone.value,
             DOB: date.value,
-            picture: picture.value
+            picture: preview
         }
         setUser(newUser);
     }
